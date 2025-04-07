@@ -1,72 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kwale Sports Excellence (CBO)</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kwale Sports Excellence</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">
-            <img src="assets/kwalesportslogo-removebg-preview.png" alt="Logo">
-        </div>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <ul class="nav-links">
-            <span class="close-btn" onclick="toggleMenu()">✖</span>
-            <li><a href="#">Our Impact</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Programs</a></li>
-            <li><a href="Donate.html">Donate</a></li>
-        </ul>
-    </nav>
+<!-- Overlay-->
+<div class="overlay" id="overlay" onclick="toggleMenu()"></div>
 
-     <!-- Hero Section -->
-     <section class="hero">
-        <div class="hero-content">
-            <h1>Empowering the youth through sports.</h1>
-            <div class="hero-image">
-                <img src="assets/netball sunset.jpg" alt="Sports Excellence">
-            </div>
-            <p>Creating an enabling environment
-                where sports can effectively be used as a social and economic resource.</p>
-        </div>
-    </section>
+<!-- Navigation Bar-->
+<nav class="nav">
+  <div class="nav-logo">
+    <img src="assets/kwalesportslogo.jpg" alt="Kwale Sports Logo">
+  </div>
+  <div class="nav-links">
+    <a href="about.html">About Us</a>
+    <a href="programs.html">Campaigns/Programs</a>
+    <a href="involve.html">Get Involved</a>
+    <a href="events.html">Events</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="Donate.html">Donate</a>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
 
-<!-- Partners Section -->
- <section class="partners-section">
-    <h2>Our Partners</h2>
-    <div class="partners-container">
-      <div class="partner-logo">
-        <img src="assets/base titanium.jpg" alt="Partner 1">
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="about.html">About Us</a>
+  <a href="programs.html">Campaigns/Programs</a>
+  <a href="involve.html">Get Involved</a>
+  <a href="Donate.html">Donate</a>
+</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const overlay = document.getElementById('overlay');
+    const hamburger = document.querySelector('.hamburger');
+    
+    menu.classList.toggle('active');
+    overlay.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  }
+</script>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Creating an enabling environment
+        where sports can effectively be used as a social and economic resource.</h1>
+    <p></p>
+    <div class="cta-buttons">
+      <a href="about.html" class="btn btn-primary">Learn More</a>
+      <a href="involve.html" class="btn btn-secondary">Get Involved</a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Campaigns Section
+<section class="featured-campaigns" id="campaigns">
+  <h2>Our Featured Campaigns</h2>
+  <div class="campaigns-grid">
+    <div class="campaign">
+      <img src="assets/jumping.jpg" alt="Campaign 1">
+      <h3>Campaign 1</h3>
+      <p>Details about the campaign go here.</p>
+    </div>
+    <div class="campaign">
+      <img src="assets/group with whitemen.webp" alt="Campaign 2">
+      <h3>Campaign 2</h3>
+      <p>Details about the campaign go here.</p>
+    </div>
+    <div class="campaign">
+      <img src="assets/cycle for sables.jpg" alt="Campaign 3">
+      <h3>Campaign 3</h3>
+      <p>Details about the campaign go here.</p>
+    </div>
+  </div>
+</section> -->
+
+<section class="section-nav">
+    <div class="section-nav-line"></div>
+  
+    <div class="section-nav-grid">
+      <a href="about.html" class="nav-item">Our Mission</a>
+      <a href="involve.html" class="nav-item">Campaigns/Programs</a>
+      <a href="" class="nav-item">Our Team</a>
+    </div>
+  
+    <div class="section-nav-line"></div>
+  </section>
+  
+   
+
+<!-- Impact Section -->
+<section class="impact">
+    <h2>Our Impact</h2>
+    <div class="impact-stats">
+      <div class="stat">
+        <i class="fa-solid fa-users stat-icon"></i>
+        <h3 class="count" data-target="500">0</h3>
+        <p>Youth Engaged</p>
       </div>
-      <div class="partner-logo">
-        <img src="assets/diani_bikes-removebg-preview.png" alt="Partner 2">
+      <div class="stat">
+        <i class="fa-solid fa-calendar-days stat-icon"></i>
+        <h3 class="count" data-target="12">0</h3>
+        <p>Events Hosted</p>
       </div>
-      <div class="partner-logo">
-        <img src="assets/kenya_wildlife-removebg-preview.png" alt="Partner 3">
+      <div class="stat">
+        <i class="fa-solid fa-venus stat-icon"></i> <!-- Venus = Female symbol -->
+        <h3 class="count" data-target="60">0</h3>
+        <p>Girls Participation</p>
       </div>
-      <div class="partner-logo">
-        <img src="assets/swahili beach.jpg" alt="Partner 4">
-      </div>
-      <div class="partner-logo">
-        <img src="assets/red_cross-removebg-preview.png" alt="Partner 5">
-      </div>
-      <div class="partner-logo">
-        <img src="assets/mishi_fashion_hub-removebg-preview.png" alt="Partner 6">
-      </div>
-      <!-- Add more partner logos as needed -->
+    </div>
+  </section>
+  
+  
+  
+  <!-- Call to Action -->
+  <section class="cta" id="get-involved">
+    <h2>Join the Movement</h2>
+    <p>Your support helps us grow the next generation of champions.</p>
+    <div class="cta-buttons">
+      <a href="#volunteer" class="btn btn-primary">Volunteer</a>
+      <a href="#donate.html" class="btn btn-secondary">Donate</a>
     </div>
   </section>
 
-  <script src="script.js"></script>
-    <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
-            navLinks.classList.toggle('active');
-        }
-    </script>
+  
+<!-- Contact Details Section -->
+<section class="contact-details">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fa fa-phone"></i>
+        <p><a href="tel:+1234567890" class="contact-link">+1 234 567 890</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:info@kwalesports.com" class="contact-link">info@kwalesports.com</a></p>
+      </div>
+      <div class="contact-item">
+        <i class="fa fa-map-marker-alt"></i>
+        <p><a href="https://www.google.com/maps?q=Your+Address+Here" target="_blank" class="contact-link">Your Address Here</a></p>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Our Roots 
+  <section class="about" id="about">
+    <h2>Our Roots</h2>
+    <p>Founded in Kwale County, our community-based organization uses sports as a tool to empower youth, promote peace, and create opportunities.</p>
+    <img src="assets/founders kse.jpg" alt="Founders and community">
+  </section>-->
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <img src="assets/kwalesportslogo.jpg" alt="CBO Logo" class="footer-logo">
+      <p>Kwale Sports Excellence — Empowering Youth Through Sports</p>
+    </div>
+    <div class="footer-links">
+      <div class="footer-column">
+        <h4>About Us</h4>
+        <ul>
+          <li><a href="#about.html">Who We Are</a></li>
+          <li><a href="#team.html">Our Team</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Give</h4>
+        <ul>
+          <li><a href="#donate">Donate</a></li>
+          <li><a href="#sponsor">Sponsorships</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="#volunteer">Volunteer</a></li>
+          <li><a href="#partnerships">Partnerships</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kwale Sports Excellence. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll('.count');
+  const speed = 100;
 
+  const animateCounters = () => {
+    counters.forEach(counter => {
+      const target = +counter.getAttribute('data-target');
+      const updateCount = () => {
+        const current = +counter.innerText;
+        const increment = Math.ceil(target / speed);
+        if (current < target) {
+          counter.innerText = current + increment;
+          setTimeout(updateCount, 20);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+  };
+
+  // Trigger animation when section scrolls into view
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounters();
+        observer.disconnect(); // Only run once
+      }
+    });
+  }, { threshold: 0.6 });
+
+  const impactSection = document.querySelector('.impact');
+  observer.observe(impactSection);
+});
+
+  </script>
+  
 </body>
 </html>

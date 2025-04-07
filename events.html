@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Events - Kwale Sports Excellence</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    .hero {
+      background: url(assets/rugby.jpg) center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+    }
+
+    .events {
+      max-width: 1100px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .events h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 50px;
+    }
+
+    .event {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 60px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .event img {
+      width: 100%;
+      max-width: 500px;
+      height: auto;
+      object-fit: cover;
+    }
+
+    .event-content {
+      flex: 1;
+      padding: 30px;
+      background: #f5f5f5;
+    }
+
+    .event-content h3 {
+      font-size: 1.8em;
+      color: #0f609b;
+      margin-bottom: 10px;
+    }
+
+    .event-content p {
+      margin-bottom: 10px;
+      font-size: 1.05em;
+      color: #555;
+    }
+
+    .event-date {
+      font-weight: bold;
+      color: #0f609b;
+      margin-top: 10px;
+    }
+
+    .footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    .footer-logo {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .event {
+        flex-direction: column;
+      }
+
+      .event img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero -->
+<section class="hero">
+  <h1>Our Events</h1>
+  <p>Uniting communities through sports, competition, and celebration.</p>
+</section>
+
+<!-- Events Section -->
+<section class="events">
+  <h2>Upcoming & Featured Events</h2>
+
+  <!-- Sports Tourism Event -->
+  <div class="event">
+    <img src="assets/win celebrations.webp" alt="Beach Rugby Tournament">
+    <div class="event-content">
+      <h3>Beach Rugby Tournament</h3>
+      <p>Hosted along the stunning Kwale coastline, this major tournament attracts rugby teams from across the country. It's not just a competition — it's a celebration of sports tourism, community, and youth empowerment.</p>
+      <p class="event-date">Date: August 17–19, 2025</p>
+    </div>
+  </div>
+
+  <!-- Youth Soccer Fiesta -->
+  <div class="event">
+    <img src="assets/group with whitemen.webp" alt="Youth Soccer Fiesta">
+    <div class="event-content">
+      <h3>Youth Soccer Fiesta</h3>
+      <p>An annual gathering of under-18 football clubs across the county. The event focuses on talent identification, fair play, and health awareness for young athletes.</p>
+      <p class="event-date">Date: May 4, 2025</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <img src="assets/kwalesportslogo.jpg" alt="Kwale Sports Excellence Logo" class="footer-logo" />
+  <p>Kwale Sports Excellence — Celebrating Sports and Community</p>
+</footer>
+
+</body>
+</html>
