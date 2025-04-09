@@ -85,7 +85,7 @@ h1, h2, h3 {
 }
 
 .nav-logo img {
-  height: 50px;
+  height: 80px;
 }
 
 .nav-links {
@@ -185,20 +185,40 @@ h1, h2, h3 {
 
 /* Hero Section */
 .hero {
-  background: url(assets/olga-guryanova-ft7vJxwl2RY-unsplash\ \(1\).jpg) center/cover no-repeat;
-  color: rgb(255, 255, 255);
-  text-shadow: rgba(0, 0, 0, 0.5) 0px 1px 2px;
+  position: relative;
+  background: url(assets/beach\ srammage.jpg) center/cover no-repeat;
+  color: white;
   text-align: left;
   padding: 120px 20px;
   animation: fadeIn 2s ease-in;
+  z-index: 1;
 }
 
-.hero h1{
-    font-size: 40px;
+/* Overlay */
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* darkens image */
+  z-index: -1; /* behind text */
 }
+
+.hero h1 {
+  font-size: 42px;
+  text-shadow: 0px 4px 2px rgba(7, 59, 20, 0.8);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
 .cta-buttons {
-  margin-top: 20px;
+  margin-top: 30px;
 }
+
 
 @keyframes fadeIn {
   from { opacity: 0; }
