@@ -12,6 +12,25 @@
       color: #333;
     }
 
+  .back-arrow {
+    display: inline-block;
+    margin: 20px;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.back-arrow i {
+  margin-right: 8px;
+}
+
+.back-arrow:hover {
+  color: #a07f2d;
+}
+
+
     .hero {
       background: url(assets/rugby.jpg) center/cover no-repeat;
       color: white;
@@ -94,12 +113,17 @@
   </style>
 </head>
 <body>
+  
 
 <!-- Hero Section -->
 <section class="hero">
   <h1>Our Programs</h1>
   <p>Explore the initiatives driving impact through sports in Kwale County.</p>
 </section>
+
+<a href="javascript:history.back()" class="back-arrow">
+  <i class="fa fa-arrow-left"></i> Back
+</a>
 
 <!-- Programs Section -->
 <section class="programs">
